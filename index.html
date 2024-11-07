@@ -3,120 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Inicio</title>
+    <title>FLIXY - Tarea #1</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body, html {
-            height: 100%;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://cnbl-cdn.bamgrid.com/assets/6e5f26c3d5a817c0f8604d425e5660d7b592dcc55f8825b47123fcaa1cafd862/original') no-repeat center center fixed;
-            background-size: cover;
-            filter: brightness(0.3);
-            z-index: 0;
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://t4.ftcdn.net/jpg/10/01/05/61/360_F_1001056104_xA9Z5lgyHQeGZHyz7LllxAkjglrVN81s.jpg'); /* URL de la imagen de fondo */
+            background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+            background-position: center; /* Centra la imagen */
+            background-attachment: fixed; /* Fija la imagen al fondo mientras se desplaza */
+            color: #fff; /* Texto blanco */
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            height: 100vh; /* Asegura que ocupe todo el alto de la ventana */
+            margin: 0; /* Elimina el margen por defecto */
+            text-align: center;
         }
 
         .container {
-            text-align: center;
-            padding: 40px;
-            width: 90%;
-            max-width: 500px;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.6);
+            padding: 20px 30px; /* Reducido para hacer el fondo más pequeño */
+            background-color: rgba(0, 0, 0, 0.98); /* Fondo oscuro semi-transparente */
             border-radius: 10px;
-            z-index: 1;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+            width: 400px; /* Ancho fijo del contenedor */
+            margin-left: 20px; /* Margen izquierdo */
+            margin-right: 20px; /* Margen derecho */
         }
 
         .logo {
-            font-size: 72px;
-            color: #e50914;
-            margin-bottom: -230px;
-            font-weight: 900;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 60px; /* Tamaño de fuente reducido */
+            color: #e50914; /* Rojo característico de Netflix */
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
-        .form-section {
-    width: 800px; /* Ancho fijo de 800px */
-    height: 350px;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-top: 250px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: -238px; /* Mueve hacia la izquierda */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-        iframe {
-            border: none;
-            width: 100%;
-            height: 420px;
-            background: transparent; /* Fondo transparente */
-        }
-
-        .social-icons {
+        .description {
+            font-size: 18px; /* Tamaño de fuente reducido */
             margin-top: 20px;
-            margin-bottom: 10px;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.3); /* Fondo más oscuro para la descripción */
+            border-radius: 10px;
         }
 
-        .social-icons img {
-            width: 40px;
-            margin: 0 10px;
-            vertical-align: middle;
+        .button {
+            margin-top: 30px; /* Espaciado reducido */
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #e50914; /* Rojo de Netflix */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
-        .footer {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 14px;
-            color: #777;
+        .button:hover {
+            background-color: #b20710; /* Rojo más oscuro al pasar el ratón */
         }
     </style>
 </head>
 <body>
-    <div class="background"></div>
+
     <div class="container">
         <div class="logo">FLIXY</div>
-
-        <!-- Nueva sección para el formulario -->
-        <div class="form-section">
-            <iframe src="https://www.authpro.com/auth/jhoniel1/" title="Formulario de Login" allowtransparency="true"></iframe>
+        <div class="description">
+            <p>Gracias por realizar la tarea #1. Toma una captura y envía tu reporte, luego continúa con la segunda tarea.</p>
         </div>
-        
-        <div class="social-icons">
-            <a href="https://t.me/flixy_peliculas"><img src="https://cdn.icon-icons.com/icons2/923/PNG/256/telegram_icon-icons.com_72055.png" alt="Telegram"></a>
-            <a href="https://t.me/flixy_oficial"><img src="https://cdn.icon-icons.com/icons2/923/PNG/256/telegram_icon-icons.com_72055.png" alt="Telegram"></a>
-            <a href="https://www.facebook.com/profile.php?id=61556337333658&mibextid=ZbWKwL"><img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/facebook_logo_icon_147291.png" alt="Facebook"></a>
-        </div>
+        <button class="button" onclick="window.location.href='https://example.com/segunda-tarea';">
+            Continuar con la segunda tarea
+        </button>
+    </div>
 
-    </div>
-    <div class="footer">
-       &copy; 2024 Derechos Reservados 
-    </div>
 </body>
 </html>
